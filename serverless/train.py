@@ -62,13 +62,13 @@ val_generator = val_datagen.flow_from_directory(val_dir, target_size=(200, 200),
 print(train_generator, val_datagen)
 
 
-#history = cnn_model.fit(train_generator, epochs=10, validation_data = val_generator)
+history = cnn_model.fit(train_generator, epochs=10, validation_data = val_generator)
 
 
-# train_accuracy = history.history['accuracy']
-# print(train_accuracy)
-# train_loss = history.history['loss']
-# print(train_loss)
+train_accuracy = history.history['accuracy']
+print(train_accuracy)
+train_loss = history.history['loss']
+print(train_loss)
 
 
 
